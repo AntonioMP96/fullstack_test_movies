@@ -1,0 +1,40 @@
+:root {
+  --main-turq: #5ae8c1;
+  --main-white: #EEE;
+  --seq-white: #999;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+  }
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input, select, button {
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
