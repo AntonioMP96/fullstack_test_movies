@@ -11,10 +11,14 @@ services:
     volumes:
       - .:/app
   frontend:
-    build: movie_page_test/.
-    command: sh -c "npm run dev"
+    # build: movie_page_test/.
+    build:
+      context: movie_page_test/.
+      dockerfile: Dockerfile
+    # command: sh -c "npm run dev"
     ports:
-      - 127.0.0.1:3000:3000
+      - '3000:3000'
     volumes:
       - ./movie_page_test:/app
+      - /app/node_modules
     #   - /app/node_modules
